@@ -1,0 +1,16 @@
+.BarraLateralCM{
+    display: flex;
+    margin: 0;
+}
+
+.Main_CM{
+    flex: 1;
+    margin-left: 28vh; 
+    margin-right: 2vh;
+    height: 100vh;
+    padding-top: 10px;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+}

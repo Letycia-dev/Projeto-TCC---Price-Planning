@@ -1,0 +1,197 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1742335511466
+  modified: 1742335511466
+collection:
+  - name: Materia - Prima
+    meta:
+      id: fld_1e5ec3da08b54bdca522097278e644f7
+      created: 1732982911892
+      modified: 1732982922561
+      sortKey: -1732982916146
+    children:
+      - url: http://localhost:3333/Materia_prima/Post
+        name: Inserir materia Prima
+        meta:
+          id: req_fc91bdc657c74e4d9e4f4fd8dbe612b2
+          created: 1732982915846
+          modified: 1744408276507
+          isPrivate: false
+          sortKey: -1732982928306
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	
+            "codigo": "22102",
+            "comprimento_min": "4950",
+            "comprimento_nom": "5000",
+            "descricao": "ESPUMA PU POLIESTER D26",
+            "dt_ultimo_custo": "2025-04-11",
+            "espessura_min": "980",
+            "espessura_nom": "1000",
+            "fator_conv": "0,7442",
+            "habilitado": "1",
+            "largura_min": "980",
+            "largura_nom": "1000",
+            "observacao_custo": "IMPOSTO DE 18%",
+            "preco_c_imposto": "3,5",
+            "preco_s_imposto": 2.6047,
+            "unid_medida": "MM"
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/22106
+        name: Atualiza materia Prima
+        meta:
+          id: req_fd6902df48a141009ab321c1f591dd8c
+          created: 1732983482836
+          modified: 1732984088630
+          isPrivate: false
+          sortKey: -1732982928256
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"codigo": "22106",
+            	"descricao": "Espuma D26",
+            	"comprimento": "4950",
+            	"largura": "980", 
+            	"espessura": "980", 
+            	"custo": "3.00", 
+            	"dt_ultimo_custo":"2024-05-30",
+            	"fornecedor": "Espumas LTDA.", 
+            	"unid_medida": "MM"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/
+        name: Consultar Materia-Prima
+        meta:
+          id: req_3cea44a63a7b49728c1f4c4878afed87
+          created: 1732983571376
+          modified: 1732983664467
+          isPrivate: false
+          sortKey: -1732982928281
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/22106
+        name: Deletar Materia-Prima
+        meta:
+          id: req_00dec83004f34b4a84312f0af44d2323
+          created: 1732984423619
+          modified: 1732984436740
+          isPrivate: false
+          sortKey: -1732982928268.5
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: New Request
+    meta:
+      id: req_9eb5999ad07a415bbec9814ff161996d
+      created: 1744334825336
+      modified: 1744334878074
+      isPrivate: false
+      sortKey: -1744334825336
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "raffleTitle": "Teste de Titulo",
+         "categories" : ["Categoria 1", "Categoria 2"],
+         "items": {
+         						"Cat1_item1": "Item 1",
+                    "Cat1_item2": "Item 2",
+                    "Cat2_item1": "Item 1.2",
+                    "Cat2_item2": "Item 2.2"
+         					}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742335523892
+    modified: 1742335523892
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742335523817
+    modified: 1742335523817
+    isPrivate: false

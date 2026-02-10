@@ -1,0 +1,365 @@
+.body {
+    flex: 1;
+    background-color: rgb(55, 113, 190, 0.2);
+    margin: 1.5vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(0, 74, 173);
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+    color: white;
+    text-align: center;
+
+}
+
+.header h1 {
+    margin: auto;
+    font-size: 5vh;
+}
+
+.iconHome {
+    height: 6vh;
+    width: 6vh;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.main form {
+
+    margin: auto;
+    background-color: white;
+    padding: 2vh 3vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.forms {
+    display: flex;
+}
+
+.main p {
+    font-size: 2vh;
+}
+
+.main h2 {
+    font-size: 2.5vh;
+}
+
+.divLeft {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.initialData {
+    background-color: rgb(0, 74, 173);
+    padding: 2vh 5vh 5vh 5vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vh;
+    margin-bottom: 2vh;
+}
+
+.initialData h2 {
+    margin-bottom: 3vh;
+    text-align: center;
+
+}
+
+.divSupL {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divSupL div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.divSupL input {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    font-size: 1.5vh;
+    text-align: center;
+    margin-left: 3vh;
+}
+
+.divSupL select {
+
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    font-size: 1.5vh;
+    text-align: center;
+    margin-left: 3vh;
+}
+
+.codigo {
+    margin-right: 2.5vh;
+}
+
+.readOnlyCod {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    font-size: 1.5vh;
+    text-align: center;
+    margin-left: 3vh;
+    background-color: rgb(179, 179, 179);
+}
+
+.descricao {
+    display: flex;
+}
+
+.descricao input {
+    border-radius: 2vh;
+    padding: 0vh 2vh;
+    height: 3vh;
+    border: none;
+    width: 80vh;
+    font-size: 1.5vh;
+    margin-left: 2vh;
+    text-align: start;
+}
+
+.divCost {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.inputDefault {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    margin-left: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.readOnly {
+
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    margin-left: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+}
+
+.divDate {
+    display: flex;
+    align-items: center;
+}
+
+.inputDate {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    margin-left: 2vh;
+    font-size: 1.5vh;
+
+}
+
+.divCost div {
+    display: flex;
+    flex-direction: column;
+}
+
+.divCost div div {
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.observacao {
+    display: flex;
+
+}
+
+.observacao input {
+    margin-left: 1.5vh;
+    border: none;
+    border-radius: 2vh;
+    width: 80vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    font-size: 1.5vh;
+}
+
+.divRight {
+
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(0, 74, 173);
+    padding: 2vh;
+    border-radius: 3vh;
+    margin-left: 2vh;
+    text-align: center;
+    width: 45vh;
+
+}
+
+.given {
+    display: flex;
+    flex-direction: column;
+}
+
+.given div {
+    background-color: rgb(16, 67, 136);
+    margin: 1vh 0vh;
+    padding: 0.5vh 1vh;
+    border-radius: 3vh;
+}
+
+.given div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.given input {
+
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 16vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.main form button {
+    width: 25vh;
+    padding: 1vh;
+    margin-top: 2vh;
+    border-radius: 3vh;
+    background-color: rgb(0, 74, 173);
+    color: white;
+    border: none;
+    font-family: "Krona One", serif;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.message {
+
+    background-color: rgba(6, 53, 116, 0.95);
+    display: flex;
+    position: absolute;
+    width: 35vh;
+    height: 18vh;
+    padding: 2vh;
+    margin-top: 30vh;
+    margin-left: 60vh;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.message p {
+    text-align: center;
+    width: 30vh;
+    margin-bottom: 2vh;
+}
+
+.message button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+    cursor: pointer;
+
+}
+
+.inputsEnabled {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.enabledInput {
+    display: flex;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.enabledInput div {
+    display: flex;
+}
+
+.enabledInput p {
+    margin-right: 1vh;
+}
+
+.enabledInput input {
+    margin-right: 1vh;
+
+}
+
+.inputsEnabled input[type="checkbox"] {
+    appearance: none;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.inputsEnabled input[type="checkbox"]:checked {
+    background-color: #000000;
+}
+
+.inputsEnabled input[type="checkbox"]:checked::before {
+    content: "X";
+    color: white;
+    font-size: 1.3vh;
+    position: absolute;
+    left: 0.8vh;
+    top: 0.4vh;
+}

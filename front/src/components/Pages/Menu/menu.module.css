@@ -1,0 +1,135 @@
+.body {
+    background-color: rgb(188, 209, 236);
+    color: white;
+}
+
+.Header {
+    background-color: rgb(0, 70, 180);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header img {
+    height: 22vh;
+    width: 22vh;
+}
+
+.canto {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: space-between;
+    padding: 2vh 2vh 1.5vh 0vh;
+}
+
+.Usuario {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: white;
+}
+
+.Usuario p {
+    font-size: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.UserIcon {
+    height: 4vh;
+    width: 6vh;
+}
+
+.sair {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+.Off {
+    height: 2.5vh;
+    width: 4.5vh;
+}
+
+.sair p {
+    font-size: 1.5vh;
+}
+
+
+
+
+.caixas {
+    background-color: rgb(0, 74, 173);
+    width: 35vh;
+    height: 30vh;
+    border-radius: 2em;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.caixas svg {
+    height: 12vh;
+    width: 12vh;
+}
+
+.caixas h1 {
+    font-size: 3vh;
+    margin-top: 2vh;
+    text-align: center;
+    color: white;
+}
+
+.caixas_cima {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixasc2 {
+    background-color: rgb(56, 114, 191);
+    width: 35vh;
+    height: 30vh;
+    border-radius: 2em;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.caixasc2 h1 {
+    font-size: 3vh;
+    background-color: rgb(56, 114, 191);
+    margin-top: 2vh;
+    text-align: center;
+    color: white;
+}
+
+.Icon {
+    height: 17vh;
+    width: 17vh;
+    color: white;
+}
+
+.RawMaterial {
+    color: white;
+}
+
+.caixas_baixo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 20vh 0vh 20vh;
+}
+
+.Main {
+    margin-top: 2vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}

@@ -1,0 +1,205 @@
+.Body_GetMP {
+    margin-top: 2vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h2 {
+    color: white;
+    padding: 2vh;
+    padding-right: 2.5vh;
+    background-color: rgb(0, 74, 173);
+    text-align: start;
+    border-radius: 2.5vh 2.5vh 0vh 0vh;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.campo_add {
+    display: flex;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vh;
+    margin-right: 2vh;
+    justify-content: space-between;
+    width: 50vh;
+}
+
+.pesquisar select {
+    border: none;
+    border-radius: 1vh;
+    margin: auto;
+    height: 3vh;
+    font-size: 1.5vh;
+    width: 15vh;
+    text-align: center;
+    font-family: "Krona One", serif;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.pesquisar option {
+    color: white;
+    background-color: rgb(0, 74, 173);
+    border: none;
+}
+
+.pesquisar input {
+    margin: 0vh 0vh 0vh 1vh;
+    border: none;
+    border-radius: 1vh 0vh 0vh 1vh;
+    height: 2.55vh;
+    padding-left: 1vh;
+    padding: 0.5vh;
+}
+
+.icone_pesquisa svg {
+    height: 3.5vh;
+    width: 2vh;
+    background-color: white;
+    border-radius: 0vh 1vh 1vh 0vh;
+    padding-right: 1vh;
+}
+
+.icone_pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.inputPesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.combo_box {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.adicionar {
+    color: white;
+    padding: 2vh;
+    padding-right: 2.5vh;
+    background-color: rgb(0, 74, 173);
+    text-align: start;
+    border-radius: 2.5vh 2.5vh 0vh 0vh;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1vh;
+}
+
+.icone_add {
+    margin-left: 10px;
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+.read {
+    background-color: rgb(255, 255, 255);
+    padding: 1.8vh;
+    border-radius: 0vh 0vh 2vh 2vh;
+    width: 120vh;
+}
+
+.label {
+    background-color: rgb(0, 74, 173);
+    border-radius: 1.5vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5vh 1vh;
+    margin-bottom: 1vh;
+}
+
+.defaultLi {
+    display: flex;
+    list-style: none;
+    font-size: 1.3vh;
+    width: 20vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vh;
+    font-weight: bold;
+}
+
+.spaceLi {
+    list-style: none;
+    width: 10vh;
+}
+
+.mfRegister {
+    background-color: rgb(230, 230, 230);
+    border-radius: 1.5vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
+
+.defaultLiRegister {
+    display: flex;
+    list-style: none;
+    font-size: 1.3vh;
+    width: 20vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vh;
+}
+
+.icons {
+    list-style: none;
+    width: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons svg {
+    height: 1.8vh;
+    width: 1.8vh;
+    cursor: pointer;
+}
+
+.message {
+    background-color: rgba(6, 53, 116, 0.95);
+    display: flex;
+    position: absolute;
+    width: 35vh;
+    height: 18vh;
+    padding: 1vh;
+    margin-top: 30vh;
+    margin-left: 95vh;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.message p {
+    text-align: center;
+    width: 30vh;
+    margin-bottom: 2vh;
+}
+
+.message button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+}

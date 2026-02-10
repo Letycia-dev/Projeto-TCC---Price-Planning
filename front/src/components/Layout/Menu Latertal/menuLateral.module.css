@@ -1,0 +1,92 @@
+.menuLateral {
+    background-color: rgb(0, 70, 180);
+    width: 27vh;
+    color: white;
+    height: 100vh;
+}
+
+.logo {
+   height: 20vh;
+   width: 23vh;
+}
+
+.logoPosicao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menuLateral ul{
+    font-size: 20vh;
+    align-items: start;
+    padding: 0;
+    list-style-type: none; 
+}
+
+
+.option{
+    font-size: 1.8vh;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3vh;
+    padding: 1vh;
+    color: white;
+}
+
+
+.itemSelecionado{
+    font-size: 1.8vh;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3vh;
+    padding: 1vh;
+    color: white;
+    border-radius: 0vh 1vh;
+    background-color: rgb(0, 110, 255);
+}
+
+.menuLateral ul li:hover {
+    background-color: rgb(0, 110, 255);
+    border-radius: 0vh 1vh;
+}
+
+.icone {
+    width: 4.5vh;
+    height: 4.5vh;
+    margin-right: 1vh;
+}
+
+.calc{
+    width: 5.5vh;
+    height: 5.5vh;
+    margin-right: 1vh;
+}
+
+.Sair {
+    color: white;
+    margin-top: 15vh;
+    display: flex;
+    font-size: 2vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3vh;
+}
+
+/* @media (min-width: 1800px) {
+
+.logo{
+    height: 120px;
+    width: 150px;
+}
+
+.icone{
+    height: 50px;
+    width: 10px;
+}
+
+.calc{
+    height: 65px;
+}
+
+
+} */

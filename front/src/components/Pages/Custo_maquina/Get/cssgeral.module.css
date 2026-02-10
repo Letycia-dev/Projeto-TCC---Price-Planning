@@ -1,0 +1,12 @@
+.body{
+    height: 100vh;
+    display: flex;
+    background-color: rgb(188, 209, 236);
+}
+
+.conteiner{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+

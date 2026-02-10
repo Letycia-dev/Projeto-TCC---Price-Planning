@@ -1,0 +1,173 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+.body h4 {
+    color: white;
+    background-color: rgb(0, 60, 140);
+    padding: 2vh;
+    border-radius: 2vh 2vh 0 0;
+    width: 70vh;
+    font-size: 1.8vh;
+
+}
+
+.form {
+    background-color: white;
+    border-radius: 0 2vh 2vh 2vh;
+
+}
+
+.label {
+    background-color: rgb(0, 74, 173);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5vh;
+    font-size: 1.5vh;
+    border-radius: 0 2vh 0 0;
+}
+
+.defaultLi {
+    list-style: none;
+    width: 15vh;
+    text-align: center;
+}
+
+.liDescription {
+    list-style: none;
+    width: 60vh;
+    text-align: start;
+}
+
+.space {
+    width: 5vh;
+    height: 1vh;
+    list-style: none;
+}
+
+.main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 2vh 0 0;
+}
+
+.listDataMP {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1.5vh;
+    border-radius: 0 2vh 0 0;
+}
+
+.inputDefault {
+    width: 13vh;
+    text-align: center;
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    font-size: 1.2vh;
+}
+
+.default {
+    background-color: rgb(220, 220, 220);
+
+}
+
+.readOnly {
+    background-color: rgb(180, 180, 180);
+
+}
+
+.inputDescription {
+    width: 58vh;
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    font-size: 1.2vh;
+}
+
+.icon {
+    width: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+}
+
+.iconAdd {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.iconAdd svg {
+    height: 4vh;
+    width: 4vh;
+    color: rgb(22, 90, 180);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(0, 74, 173);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 2vh 2vh;
+    padding: 1vh 7vh 1vh 2vh;
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.observation h5 {
+    color: white;
+    margin-right: 1vh;
+    font-size: 1.7vh;
+
+}
+
+.observation input {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    width: 86vh;
+    font-size: 1.2vh;
+    background-color: rgb(220, 220, 220);
+
+}
+
+.tax h5 {
+    color: white;
+    margin-right: 1vh;
+    font-size: 1.7vh;
+
+}
+
+.tax input {
+    border-radius: 2vh;
+    padding: 0vh 1vh;
+    height: 3vh;
+    border: none;
+    text-align: center;
+    width: 15vh;
+    font-size: 1.2vh;
+    background-color: rgb(180, 180, 180);
+
+}

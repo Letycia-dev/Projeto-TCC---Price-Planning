@@ -1,0 +1,639 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.body {
+  flex: 1;
+  background-color: rgb(55, 113, 190, 0.2);
+  margin: 2vh  2vh 1vh 2vh;
+  border-radius: 3vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+}
+
+.header {
+  background-color: rgb(0, 74, 173);
+  border-radius: 3vh;
+  display: flex;
+  align-items: center;
+  padding: 1.5vh 1vh ;
+  color: white;
+  text-align: center;
+  margin-top: -2.5vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 160vh;
+  margin: 0vh 0vh 6vh 32vh;
+
+}
+
+.header h1 {
+  margin: auto;
+  font-size: 4vh;
+}
+
+.iconHome {
+  height: 6vh;
+  width: 6vh;
+  color: white;
+}
+/* Container do formulário */
+.main {
+  display: flex;
+  flex: 1;
+  margin: 1vh;
+
+}
+
+.main form {
+
+  margin: auto;
+  background-color: white;
+  padding: 2vh;
+  border-radius: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 10vh;
+  height: 81.5vh;
+}
+
+.forms{
+  display: flex;
+  transform: translate(-15vh)
+}
+
+.main p {
+  font-size: 2vh;
+}
+
+.main h2{
+  font-size: 2.5vh;
+}
+
+.formContainer {
+  max-width: 120vh;
+  margin: 0 auto;
+}
+
+/* Campos superiores */
+.topFields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5vh;
+  margin-top: -2vh;
+
+}
+
+.topFields input{
+  background-color: #dddddd;
+  margin-right: -35vh;
+  align-items: center;
+  margin-top: -12vh;
+  
+}
+
+.referenciaGroup{
+
+  margin: 2vh 0vh 0vh 5vh;
+
+}
+/*
+input:focus {
+  background-color: #ffffff; /* Azul claro 
+  outline: none; /* Remove o contorno padrão do navegador 
+}
+*/
+
+.input_default_codigo{
+  background-color: #dddddd;
+  width: 25vh; /* diminui o tamanho */
+  height: 2.5vh;
+  border-radius: 2.5vh;
+  margin-bottom: 1vh;
+  text-align: left;
+  margin-top: -10vh;
+  margin-bottom: 2.5vh;
+  margin-left: 12vh;
+  border: none;
+  padding-left: 0.5vh;
+
+}
+
+.input_default_referencia{
+  background-color: #dddddd;
+  width: 25vh; /* diminui o tamanho */
+  height: 2.5vh;
+  margin-top: -5vh;
+  border-radius: 2.5vh;
+  margin-right: 5vh;
+  margin-left: -14.5vh;
+  text-align: left;
+  margin-bottom: -5.5vh;
+  border: none;
+  padding-left: 0.5vh;
+
+}
+
+.input_default_descricao{
+  background-color: #dddddd;
+  width: 99vh; /* diminui o tamanho */
+  height: 2.5vh;
+  margin-top: -5vh;
+  border-radius: 2.5vh;
+  margin-left: 11vh;
+  text-align:start;
+  margin-bottom: -2vh;
+  border: none;
+  padding-left: 0.5vh;
+
+}
+
+.label_default_referencia{
+  font-size: 1.5vh;
+  color: #000000;
+  flex: 1;
+  margin-top: 1vh;
+  margin-right: 20vh;
+  margin-left: -25vh;
+  margin-bottom: 1vh;
+
+}
+
+.label_default_codigo{
+  font-size: 1.5vh;
+  color: #000000;
+  flex: 1;
+  margin-top: 3.5vh;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+}
+
+.label_default_descricao{
+  font-size: 1.5vh;
+  color: #000000;
+  flex: 1;
+  margin-top: -0.5vh;
+}
+
+
+
+
+
+.descricaoField{
+      margin-left: 1vh;
+
+
+}
+
+.descricaoField label{
+  flex: 1;
+}
+
+.topFields > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vh;
+}
+
+
+/* Labels */
+.label_default {
+  font-size: 1.5vh;
+  color: #2d3748;
+  flex: 1;
+  margin-bottom: 0.2vh;
+  padding: 1vh;
+  margin-top: -3.7vh;
+}
+
+
+/* Inputs genéricos */
+.input_default {
+  padding: 1.2vh;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.5vh;
+  font-size: 1.4vh;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  flex: 1;
+  align-items: center;
+  height: 1vh;
+  margin-top: -0.2vh;
+}
+
+.select_default{
+  padding: 1.2vh;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.5vh;
+  font-size: 1.4vh;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  flex: 1;
+  align-items: center;
+  height: 1.9vh;
+  margin-top: 1vh;
+}
+
+.CardProducao option{
+  color: #000000;
+}
+
+.input_default:focus, .select_default:focus {
+  outline: none;
+
+}
+
+/* Grupo de referência */
+.referenciaInput {
+  display: flex;
+  gap: 1vh;
+  padding: 1vh;
+  align-items: center;
+}
+
+.searchBtn {
+  background: #004AAD;
+  color: white;
+  border: none;
+  padding: 1.2vh 2vh;
+  border-radius: 1.5vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8vh;
+  transition: background 0.3s;
+}
+
+.searchBtn:hover {
+  background: #003882;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh;
+  margin-top: 5vh;
+  align-items: flex-start;
+
+}
+
+.CardProducao {
+  background: #fff;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.9vh;
+  padding: 2vh 3vh;
+  background-color: rgb(40, 104, 189);
+  margin-top: -1vh;
+  width: 49vh;
+  height: 20vh;
+  margin-left: 5vh;
+
+}
+
+/* Teste*/
+
+.CardProducao label,
+.CardProducao input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardProducao label {
+  width: 15vh;        /* Largura fixa da label */
+  text-align: left;  /* Alinha o texto à direita */
+  margin-right: 7vh;
+  color: white;
+  margin-bottom: -4vh;
+  margin-left: 3vh;
+}
+
+.CardProducao input {
+  width: 15vh; 
+  margin-bottom: -1vh; /* Espaço entre os inputs */
+  height: 0.2vh;
+  margin-left: 1vh;
+  margin-top: 2vh;
+ 
+}
+
+.CardProducao select {
+  width: 15vh; 
+  margin-bottom: -1vh; /* Espaço entre os inputs */
+  height: 0.5vh;
+  margin-left: 1vh;
+  margin-top: 2vh;
+ 
+}
+
+.label_default_select {
+  font-size: 1.5vh;
+  color: #2d3748;
+  flex: 1;
+  margin-bottom: 0.2vh;
+  padding: 1vh;
+  margin-top: -6.5vh;
+}
+
+.CardProducao h2 {
+  font-size: 1.8vh;
+  color: #ffffff;
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.CardEficiencia {
+  background: #fff;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.9vh;
+  padding: 2vh 3vh;
+  background-color: rgb(40, 104, 189);
+  align-items: center;
+  margin-top: -1vh;
+  width: 47vh;
+  margin-left: -0.5vh;
+  height: 16vh;
+}
+
+.CardEficiencia label,
+.CardEficiencia input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardEficiencia label {
+  width: 12vh;        /* Largura fixa da label */
+  text-align: right;  /* Alinha o texto à direita */
+  margin-right: 6vh;
+  color: white;
+  margin-top: -0.8vh;
+}
+
+.CardEficiencia input {
+  width: 15vh; 
+  margin-bottom: 1vh; /* Espaço entre os inputs */
+ height: 0.5vh;
+ margin-left: 7vh;
+}
+
+.CardEficiencia h2 {
+  font-size: 1.8vh;
+  color: #ffffff;
+  margin-bottom: 2vh;
+  padding-bottom: 0.5vh;
+  text-align: center;
+}
+
+.CardCustoHoraHomem {
+  background: #fff;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.9vh;
+  padding: 3vh 4vh;
+  background-color: rgb(40, 104, 189);
+  align-items:center;
+  margin-top: -1vh;
+  width: 47vh;
+  margin-left: 5vh;
+  height: 27vh;
+
+}
+
+.CardCustoHoraHomem label,
+.CardCustoHoraHomem input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardCustoHoraHomem label {
+  width: 25vh;
+  height: 2vh;
+  text-align:left; 
+  margin-left: -1vh;
+  color: white;
+  margin-top: -0.5vh;
+  margin-bottom: -3.5vh;
+
+}
+
+.label_default_mod{
+  width: 15vh;
+  text-align:center;
+  margin-right: 6vh;
+  color: white;
+  margin-left: -44vh;
+  font-size: 1.5vh;
+  margin-top: 27vh;
+  font-size: 1.9vh;
+
+}
+
+.input_default_mod{
+  margin-bottom: -2vh;
+  border-radius: 2vh;
+  border: none;
+  margin-top: -7.5vh;
+  width: 15vh;
+  margin-left: 33vh;
+  height: 2.5vh;
+  background-color:#ebebeb;
+
+}
+
+.CardCustoHoraHomem input {
+  width: 16vh; 
+  margin-left: 30vh;
+  margin-top: -2vh;
+  height: 0.1vh;
+ 
+}
+
+.CardCustoHoraHomem h2 {
+  font-size: 1.8vh;
+  color: #ffffff;
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.CardCustoHoraMaquina {
+  background: #fff;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.9vh;
+  padding: 2vh 3vh;
+  background-color: rgb(40, 104, 189);
+  align-items: center;
+  margin-top: -40vh;
+  width: 46vh;
+  margin-right: -22vh;
+  margin-left: 0.5vh;
+  height: 42vh;
+}
+
+.CardCustoHoraMaquina label,
+.CardCustoHoraMaquina input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardCustoHoraMaquina label {
+  width: 24vh;        /* Largura fixa da label */
+  text-align: left;  /* Alinha o texto à direita */
+  margin-right: 10vh;
+  color: white;
+  margin-bottom: -7vh; 
+  margin-top: -2vh;
+}
+
+.CardCustoHoraMaquina input {
+  width: 15vh; 
+  margin-bottom: -2vh; /* Espaço entre os inputs */
+  margin-left: 29vh;
+  margin-top: -1vh;
+  height: 0.5vh;
+ 
+}
+
+.label_default_TotalM{
+  width: 20vh;        /* Largura fixa da label */
+  text-align: left;  /* Alinha o texto à direita */
+  color: white;
+  margin-left: 71vh;
+  margin-right: -45vh;
+  margin-top: -5.3vh;
+  font-size: 1.5vh;
+}
+
+.input_default_TotalM{
+  width: 15vh; 
+  margin-bottom: -2vh; /* Espaço entre os inputs */
+  margin-left: 29vh;
+  margin-top: -5.5vh;
+  height: 2vh;
+  border-radius: 2vh;
+  border: none;
+}
+
+.CardCustoHoraMaquina h2 {
+  font-size: 1.8vh;
+  color: #ffffff;
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+
+}
+
+.CardTaxaHora {
+  background: #fff;
+  border: 0.1vh solid #e2e8f0;
+  border-radius: 2.9vh;
+  padding: 2vh 3vh;
+  background-color: rgb(40, 104, 189);
+  align-items: center;
+  margin-top: -11vh;
+  width: 49vh;
+  margin-left: 5vh;
+  height: 2.5vh;
+  margin-bottom: -2vh;
+}
+
+.CardTaxaHora label,
+.CardTaxaHora input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.label_default_taxah {
+  width: 25vh;        /* Largura fixa da label */
+  text-align: right;  /* Alinha o texto à direita */
+  margin-right: 10vh;
+  color: white;
+  margin-top: -0.1vh;
+  font-size: 1.8vh;
+}
+
+.input_default_taxah{
+  width: 18vh; 
+  border: none;
+  height: 2.5vh;
+  margin-top: -4vh;
+  border-radius: 2vh;
+  margin-left: 30vh;
+}
+
+/* Botão de submit */
+.submitBtn {
+  background: #004AAD;
+  color: white;
+  padding: 1.5vh 2vh;
+  border: none;
+  border-radius: 4vh;
+  font-size: 1.5vh;
+  margin-top: -2vh;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  height: 3.5vh;
+}
+
+.submitBtn:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0 0.4vh 0.8vh rgba(0, 74, 173, 0.2);
+}
+
+
+.submitBtnPesquisar {
+  background: #004AAD;
+  color: white;
+  padding: 1.5vh 2vh;
+  border: none;
+  border-radius: 4vh;
+  font-size: 1.5vh;
+  margin-top: -7vh;
+  transition: transform 0.2s;
+  margin-bottom: 0.2vh;
+  height: 2vh;
+  margin-left: 37vh;
+  display: flex;
+  align-items: center;
+}
+
+.submitBtnPesquisar:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0 0.4vh 0.8vh rgba(0, 74, 173, 0.2);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 110vh) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .topFields {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 76.8vh) {
+  .body {
+    margin: 1vh;
+  }
+  
+  .header {
+    padding: 1.5vh;
+  }
+  
+  .main {
+    padding: 2vh;
+  }
+}

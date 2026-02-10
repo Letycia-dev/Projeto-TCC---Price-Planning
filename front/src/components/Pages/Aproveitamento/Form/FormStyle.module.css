@@ -1,0 +1,703 @@
+.body {
+    flex: 1;
+    background-color: rgb(55, 113, 190, 0.2);
+    margin: 1.5vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(0, 74, 173);
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+    color: white;
+    justify-content: space-between;
+
+}
+
+.header h1 {
+    font-size: 5vh;
+    flex: 1;
+    text-align: right;
+    padding-right: 8vh;
+}
+
+.icon {
+    height: 6vh;
+    width: 6vh;
+    color: white;
+    cursor: pointer;
+}
+
+.iconSearch {
+    margin-right: 0.5vh;
+    cursor: pointer;
+}
+
+.divSupL {
+    display: flex;
+    justify-content: space-between;
+    width: 35vh;
+
+}
+
+.defaultPHeader {
+    font-size: 2vh;
+    padding: 1vw;
+    border-radius: 2vh;
+    background-color: rgb(6, 63, 137);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.pHeaderOpen {
+    font-size: 2vh;
+    padding: 1vw;
+    border-radius: 2vh 2vh 2vh 0vh;
+    background-color: rgb(6, 63, 137);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.monthlyVolumes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    left: 80.5vw;
+    top: 5vw;
+    width: 33vh;
+    border-radius: 0vh 2vh 2vh 2vh;
+    align-items: center;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    border: 0.3vh solid rgb(6, 63, 137);
+
+}
+
+.Label {
+    font-size: 1.2vh;
+    display: flex;
+    padding: 1vh 0;
+    background-color: rgb(6, 63, 137, 0.9);
+    color: white;
+    justify-content: space-around;
+    border-radius: 0vh 1.8vh 2vh 2vh;
+    width: 100%;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.Label p {
+    width: 13vh;
+}
+
+.inputsVol {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.inputDefualt {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    width: 13vh;
+    height: 3vh;
+    text-align: center;
+    font-size: 1.8vh;
+    border: none;
+    border-radius: 2vh;
+    margin: auto;
+}
+
+.readOnly {
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    width: 13vh;
+    height: 3vh;
+    text-align: center;
+    font-size: 1.8vh;
+    border: none;
+    border-radius: 2vh;
+    margin: auto;
+}
+
+.main {
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollView {
+    width: 84vw;
+    height: 77vh;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 200vw;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.DashBoard,
+.Params {
+    width: 84vw;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.LabelsizeDefault {
+    width: 18vh;
+    height: 2vh;
+    font-size: 1.3vh;
+    overflow: auto;
+}
+
+.inputs {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    align-items: center;
+    padding: 0.5vh 0;
+    border-radius: 0 0 2vh 2vh;
+}
+
+.inputs div {
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs div h4 {
+    margin-right: 1vh;
+    opacity: 0.7;
+}
+
+.inputsDefaults {
+    width: 10vh;
+    height: 2.5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgb(217, 217, 217);
+    text-align: center;
+    transition: ease-in 0.5s;
+}
+
+.selectDefault {
+    width: 10vh;
+    height: 2.5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgb(217, 217, 217);
+    text-align: center;
+    font-size: 1.2vh;
+    cursor: pointer;
+}
+
+.inputReadOnly {
+    width: 10vh;
+    height: 2.5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgb(156, 156, 156);
+    text-align: center;
+    transition: ease-in 0.5s;
+}
+
+.Params {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    scrollbar-width: none;
+    overflow-y: auto;
+    padding-left: 3vh;
+}
+
+.divParms {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.Dimensional {
+
+    background-color: rgb(0, 74, 173);
+    border: 0.5vh solid rgb(0, 59, 139);
+    color: white;
+    border-radius: 2vh;
+    text-align: center;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45vh;
+
+}
+
+.Dimensional h1 {
+    margin: 0.8vh 0;
+    font-size: 2vh;
+}
+
+.PartData {
+    background-color: rgb(0, 59, 139);
+    border: 0.5vh solid rgb(0, 59, 139);
+    border-radius: 4vh 4vh 2vh 2vh;
+}
+
+.PartData h3 {
+    border-radius: 2.7vh 2.7vh 0 0;
+    padding: 1vh 0;
+    font-size: 1.5vh;
+}
+
+.PartData ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.PartData ul li {
+    list-style: none;
+    display: inline;
+}
+
+.headerMP {
+    background-color: rgb(0, 59, 139);
+    border: 0.5vh solid rgb(0, 59, 139);
+    border-radius: 4vh 4vh 2vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMP select {
+
+    margin-left: 1vh;
+}
+
+.listMachines {
+
+    position: absolute;
+    background-color: rgb(0, 63, 146, 0.95);
+    border: 0.5vh solid rgba(6, 53, 116);
+    width: 90vh;
+    height: 50vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    margin-top: 10vh;
+    margin-left: 35vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    transition: 0.5s;
+
+}
+
+.opacity {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.listMachines h1 {
+    color: white;
+    text-align: start;
+    margin-bottom: 2vh;
+}
+
+.mainMachine {
+    width: 100%;
+    height: 38vh;
+    background-color: white;
+    border: 0.5vh solid rgba(6, 53, 116);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.labelMachine {
+
+    background-color: rgb(6, 53, 116);
+    border-radius: 1.5vh 1.5vh 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.liMachineLabel {
+
+    list-style: none;
+    font-size: 1.2vh;
+    width: 14vh;
+    height: 3vh;
+    text-align: center;
+}
+
+.spaceLabelMachine {
+    list-style: none;
+    font-size: 1.2vh;
+    text-align: center;
+    width: 8vh;
+}
+
+.listMachine {
+    height: 100%;
+    border-radius: 0 0 1.8vh 1.8vh;
+    padding: 1vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.listMachine ul {
+    display: flex;
+    border-radius: 2vh;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5vh;
+    background-color: rgb(212, 212, 212);
+    margin-bottom: 1vh;
+}
+
+.liMachine {
+
+    list-style: none;
+    font-size: 1.2vh;
+    width: 14vh;
+    height: 2vh;
+    padding: 0.5vh;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+}
+
+.iconsMachine {
+    list-style: none;
+    width: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.listMachines button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+    margin-top: 2vh;
+    cursor: pointer;
+
+}
+
+.editMachine {
+    position: absolute;
+    background-color: rgb(0, 63, 146, 0.95);
+    border: 0.5vh solid rgba(6, 53, 116);
+    width: 60vh;
+    height: 30vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    margin-top: 20vh;
+    margin-left: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    transition: 1s;
+}
+
+.editMachine h3 {
+    color: white;
+    text-align: start;
+    margin-bottom: 2vh;
+}
+
+.mainEditMachine {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 0.5vh solid rgba(6, 53, 116);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.inlineInputMachine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.editMachineField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editMachineField p {
+    font-size: 1.5vh;
+    margin-right: 1vh;
+    width: 14vh;
+}
+
+.editMachineField input[type="checkbox"] {
+    appearance: none;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: rgb(217, 217, 217);
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+.editMachineField input[type="checkbox"]:checked {
+    background-color: #000000;
+}
+
+.editMachineField input[type="checkbox"]:checked::before {
+    content: "X";
+    color: rgb(255, 255, 255);
+    font-size: 1.3vh;
+    position: absolute;
+    top: 22.5vh;
+    left: 60.3vh;
+    justify-content: center;
+
+}
+
+.inlineInputEspacL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inlineInputEspacL select {
+    width: 10vh;
+    height: 2.5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgb(217, 217, 217);
+    text-align: center;
+    font-size: 1.2vh;
+    margin-right: 1vh;
+    cursor: pointer;
+}
+
+.inputDescEditMachine {
+    width: 44vh;
+    height: 2.5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgb(217, 217, 217);
+    padding-left: 1vh;
+}
+
+.btnsEditMachine {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-top: 1vh;
+}
+
+.btnsEditMachine button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+    cursor: pointer;
+}
+
+.buttonScrollView {
+    display: flex;
+    margin: auto;
+    width: 23vw;
+    height: 2.5vw;
+    background-color: rgb(0, 74, 173);
+    border-radius: 2vh;
+    justify-content: space-between;
+    transition: 1s;
+    text-align: center;
+}
+
+.buttonScrollView h3 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 93.5vh;
+    cursor: pointer;
+}
+
+.buttonDashBoard {
+    left: 100vh;
+}
+
+.buttonParams {
+    left: 122vh;
+}
+
+.message {
+
+    background-color: rgba(6, 53, 116, 0.95);
+    display: flex;
+    position: absolute;
+    width: 35vh;
+    height: 18vh;
+    padding: 2vh;
+    margin-top: 30vh;
+    margin-left: 60vh;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.message p {
+    text-align: center;
+    width: 30vh;
+    margin-bottom: 2vh;
+}
+
+.message div {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.message button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+    cursor: pointer;
+}
+
+.formSave {
+    position: absolute;
+    height: 50vh;
+    width: 45vh;
+    background-color: rgb(0, 63, 146);
+    top: 30vh;
+    left: 90vh;
+    border-radius: 2vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 1vh 0;
+}
+
+.formSaveMain {
+    background-color: white;
+    height: 85%;
+    width: 98%;
+    border-radius: 2vh;
+    margin-top: 1vh;
+    display: flex;
+    font-size: 1.5vh;
+}
+
+.formSaveMain div {
+    height: 100%;
+}
+
+.formSaveSideM {
+    background-color: rgb(0, 63, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1vh;
+    align-items: center;
+    width: 50%;
+}
+
+.formSaveSideM li {
+
+    list-style: none;
+    height: 2vh;
+}
+
+.formSaveMainInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1vh;
+    align-items: center;
+    width: 50%;
+
+}
+
+.formSave button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 3vh;
+    font-size: 1.3vh;
+    padding: 1vh 4vh 1vh 4vh;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.btnsFormSave {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 0;
+}
+
+.selected {
+    height: 2.5vw;
+    width: 11.5vw;
+    background-color: rgb(0, 88, 202);
+    border-radius: 2vh;
+    transition: transform 0.5s ease;
+}
+
+.toStart {
+    transform: translateX(0);
+}
+
+.toEnd {
+    transform: translateX(100%);
+}
+
+.toDashBoard {
+    transform: translateX(0);
+}
+
+.toParams {
+    transform: translateX(-85vw);
+}
